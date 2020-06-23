@@ -28,6 +28,12 @@
     <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet" />
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
 
+    <!-- datatables styling -->
+    <link
+      href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet" />
 
@@ -39,16 +45,6 @@
   ======================================================= -->
 
     <style>
-      img.avatar {
-        width: 200px;
-        height: 200px;
-        display: block;
-        border-radius: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-      }
-
       h3.gymName {
         font-weight: bold;
       }
@@ -116,7 +112,7 @@
               </ul>
             </li>
             <li><a href="#gyms">Gyms</a></li>
-            <li><a href="#">Fighters</a></li>
+            <li><a href="#fighters">Fighters</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -150,12 +146,12 @@
       <!-- #call-to-action -->
 
       <!--==========================
-      Competitions Section
+      Fighters Section
     ============================-->
-      <section id="competitions" class="wow fadeInUp">
+      <section id="fighters" class="wow fadeInUp">
         <div class="container">
           <div class="section-header">
-            <h2>Competitions List</h2>
+            <h2>Fighters List</h2>
             <p>
               Sed tamen tempor magna labore dolore dolor sint tempor duis magna
               elit veniam aliqua esse amet veniam enim export quid quid veniam
@@ -166,166 +162,45 @@
         </div>
 
         <div class="container">
-          <div class="row no-gutters">
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/1.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/1.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 1</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/2.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/2.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 2</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/3.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/3.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 3</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/4.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/4.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 4</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/1.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/1.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 5</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/2.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/2.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 6</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/3.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/3.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 7</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/4.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/4.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 8</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/1.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/1.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 9</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/2.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/2.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 10</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/3.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/3.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 11</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/4.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/4.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 12</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+          <table id="figthersListTable" class="table table-striped text-center">
+            <thead>
+              <tr>
+                <th>Avatar</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img class="avatar" src="img/avatars/avatar1.png" />
+                </td>
+                <td class="align-middle">Dayat</td>
+                <td class="align-middle">Male</td>
+                <td class="align-middle">Adult</td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="avatar" src="img/avatars/avatar2.png" />
+                </td>
+                <td class="align-middle">Tifa</td>
+                <td class="align-middle">Female</td>
+                <td class="align-middle">Adult</td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="avatar" src="img/avatars/avatar3.png" />
+                </td>
+                <td class="align-middle">Selphie</td>
+                <td class="align-middle">Female</td>
+                <td class="align-middle">Youth</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
-      <!-- #Competitions -->
+      <!-- #Fighters -->
     </main>
 
     <!--==========================
@@ -362,6 +237,9 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/magnific-popup/magnific-popup.min.js"></script>
     <script src="lib/sticky/sticky.js"></script>
+
+    <!-- datatables -->
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>

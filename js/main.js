@@ -186,7 +186,12 @@ jQuery(document).ready(function ($) {
     },
   });
 
+  // prevent default for activities link
   $("a.activities-nav").click(function (e) {
     e.preventDefault();
+  });
+
+  $(document).ready(function () {
+    $("#figthersListTable").DataTable();
   });
 });

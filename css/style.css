@@ -895,6 +895,65 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: translate(-50%, -50%);
 }
 
+/* Fighters Section
+--------------------------------*/
+
+#fighters {
+  background: #fff;
+  padding: 30px 0;
+}
+
+#fighters .portfolio-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all ease-in-out 0.4s;
+}
+
+#fighters .portfolio-item {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#fighters .portfolio-item h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+#fighters .portfolio-item img {
+  transition: all ease-in-out 0.4s;
+  width: 100%;
+}
+
+#fighters .portfolio-item:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#fighters .portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#fighters .portfolio-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 /* Testimonials Section
 --------------------------------*/
 
@@ -1376,4 +1435,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   #contact #google-map {
     margin-top: 20px;
   }
+}
+
+/* custom */
+img.avatar {
+  width: 100px;
+  height: 100px;
+  margin-left: 0px;
+  display: block;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }

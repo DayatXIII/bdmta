@@ -28,6 +28,12 @@
     <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet" />
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
 
+    <!-- datatables styling -->
+    <link
+      href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet" />
 
@@ -39,16 +45,6 @@
   ======================================================= -->
 
     <style>
-      img.avatar {
-        width: 200px;
-        height: 200px;
-        display: block;
-        border-radius: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-      }
-
       h3.gymName {
         font-weight: bold;
       }
@@ -105,19 +101,19 @@
 
         <nav id="nav-menu-container">
           <ul class="nav-menu">
-            <li class="menu-active"><a href="#body">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
+            <li class="menu-active"><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#services">Services</a></li>
             <li class="menu-has-children">
               <a class="activities-nav" href="#">Activities</a>
               <ul>
                 <li><a href="#events">Events</a></li>
-                <li><a href="#competitions">Competitions</a></li>
+                <li><a href="index.html#competitions">Competitions</a></li>
               </ul>
             </li>
-            <li><a href="#gyms">Gyms</a></li>
-            <li><a href="#">Fighters</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#gyms">Gyms</a></li>
+            <li><a href="fighters-list.html">Fighters</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </nav>
         <!-- #nav-menu-container -->
@@ -147,185 +143,208 @@
           </div>
         </div>
       </section>
-      <!-- #call-to-action -->
+      <!-- #call-to-action end -->
+      <div class="container">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home"
+              >Active Events</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1"
+              >Upcoming Events</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2">Past Events</a>
+          </li>
+        </ul>
+      </div>
 
-      <!--==========================
-      Events Section
-    ============================-->
-      <section id="events" class="wow fadeInUp">
-        <div class="container">
-          <div class="section-header">
-            <h2>Events List</h2>
-            <p>
-              Sed tamen tempor magna labore dolore dolor sint tempor duis magna
-              elit veniam aliqua esse amet veniam enim export quid quid veniam
-              aliqua eram noster malis nulla duis fugiat culpa esse aute nulla
-              ipsum velit export irure minim illum fore
-            </p>
-          </div>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="home" class="container tab-pane active">
+          <br />
+          <!-- Active Events Section -->
+          <section id="events">
+            <div class="container">
+              <div class="section-header">
+                <h2>Active Events</h2>
+                <p>
+                  Sed tamen tempor magna labore dolore dolor sint tempor duis
+                  magna elit veniam aliqua esse amet veniam enim export quid
+                  quid veniam aliqua eram noster malis nulla duis fugiat culpa
+                  esse aute nulla ipsum velit export irure minim illum fore
+                </p>
+              </div>
+            </div>
+
+            <div class="container">
+              <table
+                id="activeEventsTable"
+                class="table table-striped text-center"
+              >
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Events Name</th>
+                    <th>Date</th>
+                    <th>Info</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/1.jpg" />
+                    </td>
+                    <td class="align-middle">Event ABC</td>
+                    <td class="align-middle">23 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/2.jpg" />
+                    </td>
+                    <td class="align-middle">Event DEF</td>
+                    <td class="align-middle">24 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/3.jpg" />
+                    </td>
+                    <td class="align-middle">Event GHI</td>
+                    <td class="align-middle">25 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <!-- Active Events Section End -->
         </div>
-
-        <div class="container">
-          <div class="row no-gutters">
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/1.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/1.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Events 1</h2>
-                    </div>
-                  </div>
-                </a>
+        <div id="menu1" class="container tab-pane fade">
+          <br />
+          <!-- Upcoming Events Section -->
+          <section id="events">
+            <div class="container">
+              <div class="section-header">
+                <h2>Upcoming Events</h2>
+                <p>
+                  Sed tamen tempor magna labore dolore dolor sint tempor duis
+                  magna elit veniam aliqua esse amet veniam enim export quid
+                  quid veniam aliqua eram noster malis nulla duis fugiat culpa
+                  esse aute nulla ipsum velit export irure minim illum fore
+                </p>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/2.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/2.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Event 2</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
+            <div class="container">
+              <table
+                id="upcomingEventsTable"
+                class="table table-striped text-center"
+              >
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Events Name</th>
+                    <th>Date</th>
+                    <th>Info</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/1.jpg" />
+                    </td>
+                    <td class="align-middle">Event ABC</td>
+                    <td class="align-middle">23 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/2.jpg" />
+                    </td>
+                    <td class="align-middle">Event DEF</td>
+                    <td class="align-middle">24 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/3.jpg" />
+                    </td>
+                    <td class="align-middle">Event GHI</td>
+                    <td class="align-middle">25 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/3.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/3.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Event 3</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/4.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/4.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Event 4</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/1.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/1.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Event 5</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/2.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/2.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Event 6</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/3.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/3.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Event 7</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/4.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/4.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Event 8</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/1.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/1.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Event 9</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/2.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/2.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Event 10</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/3.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/3.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Event 11</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/4.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/4.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Event 12</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+          </section>
+          <!-- Upcoming Events Section End -->
         </div>
-      </section>
-      <!-- #Events -->
+        <div id="menu2" class="container tab-pane fade">
+          <br />
+          <!-- Past Events Section -->
+          <section id="events">
+            <div class="container">
+              <div class="section-header">
+                <h2>Past Events</h2>
+                <p>
+                  Sed tamen tempor magna labore dolore dolor sint tempor duis
+                  magna elit veniam aliqua esse amet veniam enim export quid
+                  quid veniam aliqua eram noster malis nulla duis fugiat culpa
+                  esse aute nulla ipsum velit export irure minim illum fore
+                </p>
+              </div>
+            </div>
+
+            <div class="container">
+              <table
+                id="pastEventsTable"
+                class="table table-striped text-center"
+              >
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Events Name</th>
+                    <th>Date</th>
+                    <th>Info</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/1.jpg" />
+                    </td>
+                    <td class="align-middle">Event ABC</td>
+                    <td class="align-middle">23 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/2.jpg" />
+                    </td>
+                    <td class="align-middle">Event DEF</td>
+                    <td class="align-middle">24 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/3.jpg" />
+                    </td>
+                    <td class="align-middle">Event GHI</td>
+                    <td class="align-middle">25 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <!-- Past Events Section End -->
+        </div>
+      </div>
     </main>
 
     <!--==========================
@@ -362,6 +381,9 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/magnific-popup/magnific-popup.min.js"></script>
     <script src="lib/sticky/sticky.js"></script>
+
+    <!-- datatables -->
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>

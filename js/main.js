@@ -194,4 +194,16 @@ jQuery(document).ready(function ($) {
   $(document).ready(function () {
     $("#figthersListTable").DataTable();
   });
+
+  $(document).ready(function () {
+    $("#activeEventsTable").DataTable();
+  });
+
+  $(document).ready(function () {
+    $("#upcomingEventsTable").DataTable();
+  });
+
+  $(document).ready(function () {
+    $("#pastEventsTable").DataTable();
+  });
 });

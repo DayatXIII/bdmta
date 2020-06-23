@@ -200,7 +200,7 @@ jQuery(document).ready(function ($) {
   });
 
   $(document).ready(function () {
-    $("#upcomingEventsTable").DataTable();
+    $("#nextEventsTable").DataTable();
   });
 
   $(document).ready(function () {
@@ -212,7 +212,7 @@ jQuery(document).ready(function ($) {
   });
 
   $(document).ready(function () {
-    $("#upcomingCompetitionsTable").DataTable();
+    $("#nextCompetitionsTable").DataTable();
   });
 
   $(document).ready(function () {

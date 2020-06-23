@@ -206,4 +206,16 @@ jQuery(document).ready(function ($) {
   $(document).ready(function () {
     $("#pastEventsTable").DataTable();
   });
+
+  $(document).ready(function () {
+    $("#activeCompetitionsTable").DataTable();
+  });
+
+  $(document).ready(function () {
+    $("#upcomingCompetitionsTable").DataTable();
+  });
+
+  $(document).ready(function () {
+    $("#pastCompetitionsTable").DataTable();
+  });
 });

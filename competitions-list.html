@@ -28,6 +28,12 @@
     <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet" />
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
 
+    <!-- datatables styling -->
+    <link
+      href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet" />
 
@@ -39,16 +45,6 @@
   ======================================================= -->
 
     <style>
-      img.avatar {
-        width: 200px;
-        height: 200px;
-        display: block;
-        border-radius: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-      }
-
       h3.gymName {
         font-weight: bold;
       }
@@ -152,179 +148,209 @@
       <!--==========================
       Competitions Section
     ============================-->
-      <section id="competitions" class="wow fadeInUp">
-        <div class="container">
-          <div class="section-header">
-            <h2>Competitions List</h2>
-            <p>
-              Sed tamen tempor magna labore dolore dolor sint tempor duis magna
-              elit veniam aliqua esse amet veniam enim export quid quid veniam
-              aliqua eram noster malis nulla duis fugiat culpa esse aute nulla
-              ipsum velit export irure minim illum fore
-            </p>
-          </div>
+      <div class="container">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home"
+              >Active Competitions</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1"
+              >Upcoming Competitions</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2"
+              >Past Competitions</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="home" class="container tab-pane active">
+          <br />
+          <!-- Active Events Section -->
+          <section id="competitions">
+            <div class="container">
+              <div class="section-header">
+                <h2>Active Competitions</h2>
+                <p>
+                  Sed tamen tempor magna labore dolore dolor sint tempor duis
+                  magna elit veniam aliqua esse amet veniam enim export quid
+                  quid veniam aliqua eram noster malis nulla duis fugiat culpa
+                  esse aute nulla ipsum velit export irure minim illum fore
+                </p>
+              </div>
+            </div>
+
+            <div class="container">
+              <table
+                id="activeCompetitionsTable"
+                class="table table-striped text-center table-responsive-sm"
+              >
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Competition Name</th>
+                    <th>Date</th>
+                    <th>Info</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/1.jpg" />
+                    </td>
+                    <td class="align-middle">Competition ABC</td>
+                    <td class="align-middle">23 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/2.jpg" />
+                    </td>
+                    <td class="align-middle">Competition DEF</td>
+                    <td class="align-middle">24 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/3.jpg" />
+                    </td>
+                    <td class="align-middle">Competition GHI</td>
+                    <td class="align-middle">25 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <!-- Active Events Section End -->
         </div>
-
-        <div class="container">
-          <div class="row no-gutters">
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/1.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/1.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 1</h2>
-                    </div>
-                  </div>
-                </a>
+        <div id="menu1" class="container tab-pane fade">
+          <br />
+          <!-- Upcoming Events Section -->
+          <section id="events">
+            <div class="container">
+              <div class="section-header">
+                <h2>Upcoming Competitions</h2>
+                <p>
+                  Sed tamen tempor magna labore dolore dolor sint tempor duis
+                  magna elit veniam aliqua esse amet veniam enim export quid
+                  quid veniam aliqua eram noster malis nulla duis fugiat culpa
+                  esse aute nulla ipsum velit export irure minim illum fore
+                </p>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/2.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/2.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 2</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
+            <div class="container">
+              <table
+                id="upcomingCompetitionsTable"
+                class="table table-striped text-center table-responsive-sm"
+              >
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Competition Name</th>
+                    <th>Date</th>
+                    <th>Info</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/1.jpg" />
+                    </td>
+                    <td class="align-middle">Competition ABC</td>
+                    <td class="align-middle">23 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/2.jpg" />
+                    </td>
+                    <td class="align-middle">Competition DEF</td>
+                    <td class="align-middle">24 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/3.jpg" />
+                    </td>
+                    <td class="align-middle">Competition GHI</td>
+                    <td class="align-middle">25 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/3.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/3.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 3</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/4.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/4.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 4</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/1.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/1.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 5</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/2.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/2.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 6</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/3.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/3.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 7</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/4.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/4.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 8</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/1.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/1.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 9</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/2.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/2.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 10</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/3.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/3.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 11</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="img/portfolio/4.jpg" class="portfolio-popup">
-                  <img src="img/portfolio/4.jpg" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
-                      <h2 class="wow fadeInUp">Competitions 12</h2>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+          </section>
+          <!-- Upcoming Events Section End -->
         </div>
-      </section>
+        <div id="menu2" class="container tab-pane fade">
+          <br />
+          <!-- Past Events Section -->
+          <section id="events">
+            <div class="container">
+              <div class="section-header">
+                <h2>Past Competitions</h2>
+                <p>
+                  Sed tamen tempor magna labore dolore dolor sint tempor duis
+                  magna elit veniam aliqua esse amet veniam enim export quid
+                  quid veniam aliqua eram noster malis nulla duis fugiat culpa
+                  esse aute nulla ipsum velit export irure minim illum fore
+                </p>
+              </div>
+            </div>
+
+            <div class="container">
+              <table
+                id="pastCompetitionsTable"
+                class="table table-striped text-center table-responsive-sm"
+              >
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Competition Name</th>
+                    <th>Date</th>
+                    <th>Info</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/1.jpg" />
+                    </td>
+                    <td class="align-middle">Competition ABC</td>
+                    <td class="align-middle">23 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/2.jpg" />
+                    </td>
+                    <td class="align-middle">Competition DEF</td>
+                    <td class="align-middle">24 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="events-avatar" src="img/portfolio/3.jpg" />
+                    </td>
+                    <td class="align-middle">Competition GHI</td>
+                    <td class="align-middle">25 June 2020</td>
+                    <td class="align-middle"><a href="#">More Details</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <!-- Past Events Section End -->
+        </div>
+      </div>
       <!-- #Competitions -->
     </main>
 
@@ -362,6 +388,9 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/magnific-popup/magnific-popup.min.js"></script>
     <script src="lib/sticky/sticky.js"></script>
+
+    <!-- datatables -->
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>

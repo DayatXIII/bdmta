@@ -105,14 +105,19 @@
 
         <nav id="nav-menu-container">
           <ul class="nav-menu">
-            <li class="menu-active"><a href="#body">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Events</a></li>
-            <li><a href="#team">Competitions</a></li>
-            <li><a href="#">Gyms</a></li>
-            <li><a href="#">Fighters</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li class="menu-active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class="menu-has-children">
+              <a class="activities-nav" href="#">Activities</a>
+              <ul>
+                <li><a href="events-list.html">Events</a></li>
+                <li><a href="competitions-list.html">Competitions</a></li>
+              </ul>
+            </li>
+            <li><a href="gyms-list.html">Gyms</a></li>
+            <li><a href="fighters-list.html">Fighters</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <!-- #nav-menu-container -->
@@ -160,22 +165,28 @@
           <!-- tab nav -->
           <ul class="nav nav-tabs nav-justified" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#profile"
+              <a
+                class="nav-link font-weight-bold active"
+                data-toggle="tab"
+                href="#profile"
                 >Profile</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#services"
+              <a
+                class="nav-link font-weight-bold"
+                data-toggle="tab"
+                href="#services"
                 >Services</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#location"
-                >Location</a
+              <a
+                class="nav-link font-weight-bold"
+                data-toggle="tab"
+                href="#contact"
+                >Contact</a
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#contact">Contact</a>
             </li>
           </ul>
           <!-- end tab nav -->
@@ -215,21 +226,66 @@
                 <h2>Services</h2>
               </div>
 
-              <div class="justify">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse quis turpis eu velit iaculis pharetra. Morbi eu
-                  mattis metus, vel feugiat risus. Sed gravida fermentum
-                  fringilla. Donec euismod laoreet turpis vitae vulputate. Nam
-                  sed justo lobortis, convallis metus sit amet, mollis velit.
-                  Class aptent taciti sociosqu ad litora torquent per conubia
-                  nostra, per inceptos himenaeos. Aliquam id odio et tortor
-                  interdum sodales. Integer sem ligula, convallis et consectetur
-                  ut, tincidunt sit amet neque. Sed lectus turpis, gravida at
-                  augue a, semper volutpat lacus. Nam porttitor, odio vel mollis
-                  consectetur, ex mi cursus diam, eget feugiat turpis nisl sed
-                  tortor.
-                </p>
+              <div class="row">
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="img/gyms-services/muay-thai.png">
+                      <img
+                        src="img/gyms-services/muay-thai.png"
+                        alt="Muay Thai"
+                        width="600"
+                        height="400"
+                        class="img-hover"
+                      />
+                    </a>
+                    <div class="desc">Muay Thai</div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="img/gyms-services/boxing.jpg">
+                      <img
+                        src="img/gyms-services/boxing.jpg"
+                        alt="Boxing"
+                        width="600"
+                        height="400"
+                        class="img-hover"
+                      />
+                    </a>
+                    <div class="desc">Boxing</div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="img/gyms-services/circuit.jpg">
+                      <img
+                        src="img/gyms-services/circuit.jpg"
+                        alt="Circuit"
+                        width="600"
+                        height="400"
+                        class="img-hover"
+                      />
+                    </a>
+                    <div class="desc">Circuit</div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="img/gyms-services/exercise.png">
+                      <img
+                        src="img/gyms-services/exercise.png"
+                        alt="Mountains"
+                        width="600"
+                        height="400"
+                        class="img-hover"
+                      />
+                    </a>
+                    <div class="desc">Exercise</div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- end services tab -->
@@ -237,17 +293,47 @@
             <!-- contact tab -->
             <div
               class="tab-pane container fade"
-              id="location"
-              style="
-                padding-left: 15px;
-                padding-top: 25px;
-                padding-right: 15px;
-              "
+              id="contact"
+              style="padding-left: 15px; padding-right: 15px;"
             >
               <div class="section-header">
-                <h2>Location</h2>
+                <h2>Contact</h2>
+                <p>
+                  Sed tamen tempor magna labore dolore dolor sint tempor duis
+                  magna elit veniam aliqua esse amet veniam enim export quid
+                  quid veniam aliqua eram noster malis nulla duis fugiat culpa
+                  esse aute nulla ipsum velit export irure minim illum fore
+                </p>
               </div>
-              <div class="justify">
+
+              <div class="row contact-info">
+                <div class="col-md-4">
+                  <div class="contact-address">
+                    <i class="ion-ios-location-outline"></i>
+                    <h3>Address</h3>
+                    <address>Brunei Muara, BWN777, Brunei Darussalam</address>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="contact-phone">
+                    <i class="ion-ios-telephone-outline"></i>
+                    <h3>Phone Number</h3>
+                    <p><a href="tel:+6738 888 8888">+6738 888 8888</a></p>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="contact-email">
+                    <i class="ion-ios-email-outline"></i>
+                    <h3>Email</h3>
+                    <p>
+                      <a href="mailto:contact@bwnmuaythai.com"
+                        >contact@bwnmuaythai.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
                 <div class="container mb-4">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452"
@@ -258,34 +344,6 @@
                     allowfullscreen
                   ></iframe>
                 </div>
-              </div>
-            </div>
-            <!-- end contact tab -->
-
-            <!-- contact tab -->
-            <div
-              class="tab-pane container fade"
-              id="contact"
-              style="padding-left: 15px; padding-right: 15px;"
-            >
-              <div class="section-header">
-                <h2>Contact</h2>
-              </div>
-              <div class="justify">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse quis turpis eu velit iaculis pharetra. Morbi eu
-                  mattis metus, vel feugiat risus. Sed gravida fermentum
-                  fringilla. Donec euismod laoreet turpis vitae vulputate. Nam
-                  sed justo lobortis, convallis metus sit amet, mollis velit.
-                  Class aptent taciti sociosqu ad litora torquent per conubia
-                  nostra, per inceptos himenaeos. Aliquam id odio et tortor
-                  interdum sodales. Integer sem ligula, convallis et consectetur
-                  ut, tincidunt sit amet neque. Sed lectus turpis, gravida at
-                  augue a, semper volutpat lacus. Nam porttitor, odio vel mollis
-                  consectetur, ex mi cursus diam, eget feugiat turpis nisl sed
-                  tortor.
-                </p>
               </div>
             </div>
             <!-- end contact tab -->

@@ -191,6 +191,7 @@ jQuery(document).ready(function ($) {
     e.preventDefault();
   });
 
+  // datatables for events and competitions
   $(document).ready(function () {
     $("#figthersListTable").DataTable();
   });
@@ -218,4 +219,6 @@ jQuery(document).ready(function ($) {
   $(document).ready(function () {
     $("#pastCompetitionsTable").DataTable();
   });
+
+  $("a#single_image").fancybox();
 });

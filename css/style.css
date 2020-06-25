@@ -1507,12 +1507,6 @@ img.img-hover:hover {
   }
 }
 
-tspan.title.uppercase {
-  font-size: 40px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
 div.shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -1521,4 +1515,18 @@ div.shadow {
   font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.card-date {
+  background-color: #c52c65;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-date-content {
+  color: #f5f5f5;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
 }

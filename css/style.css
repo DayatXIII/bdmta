@@ -895,15 +895,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: translate(-50%, -50%);
 }
 
-/* Fighters Section
+/* Athletes Section
 --------------------------------*/
 
-#fighters {
+#athletes {
   background: #fff;
   padding: 30px 0;
 }
 
-#fighters .portfolio-overlay {
+#athletes .portfolio-overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -915,7 +915,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all ease-in-out 0.4s;
 }
 
-#fighters .portfolio-item {
+#athletes .portfolio-item {
   overflow: hidden;
   position: relative;
   padding: 0;
@@ -923,7 +923,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
 }
 
-#fighters .portfolio-item h2 {
+#athletes .portfolio-item h2 {
   color: #ffffff;
   font-size: 24px;
   margin: 0;
@@ -931,22 +931,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
 }
 
-#fighters .portfolio-item img {
+#athletes .portfolio-item img {
   transition: all ease-in-out 0.4s;
   width: 100%;
 }
 
-#fighters .portfolio-item:hover img {
+#athletes .portfolio-item:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-#fighters .portfolio-item:hover .portfolio-overlay {
+#athletes .portfolio-item:hover .portfolio-overlay {
   opacity: 1;
   background: rgba(0, 0, 0, 0.7);
 }
 
-#fighters .portfolio-info {
+#athletes .portfolio-info {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1529,4 +1529,18 @@ div.shadow {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 20px;
+}
+
+.btn-register {
+  background-color: #ffffff;
+  color: #88e5ca;
+  border: 2px solid #88e5ca;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-register:hover {
+  background-color: #88e5ca;
+  color: #ffffff;
+  border: 2px solid #88e5ca;
 }

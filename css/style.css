@@ -1067,6 +1067,60 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 3px solid #50d8af;
 }
 
+/* Registration Section
+--------------------------------*/
+
+#registration {
+  padding: 60px 0 30px 0;
+}
+
+#registration .registration-img {
+  overflow: hidden;
+}
+
+#registration .registration-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+#registration .content h2 {
+  color: #0c2e8a;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+}
+
+#registration .content h3 {
+  color: #555;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+#registration .content p {
+  line-height: 26px;
+}
+
+#registration .content p:last-child {
+  margin-bottom: 0;
+}
+
+#registration .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #50d8af;
+}
+
+#registration .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#registration .content ul li {
+  padding-bottom: 10px;
+}
+
 /* Our Team Section
 --------------------------------*/
 
@@ -1532,15 +1586,19 @@ div.shadow {
 }
 
 .btn-register {
-  background-color: #ffffff;
-  color: #88e5ca;
-  border: 2px solid #88e5ca;
-  font-size: 20px;
+  background-color: #50d9af;
+  color: #ffffff;
+  border: 2px solid #50d9af;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .btn-register:hover {
-  background-color: #88e5ca;
+  background-color: #0c2e8a;
   color: #ffffff;
-  border: 2px solid #88e5ca;
+  border: 2px solid #0c2e8a;
+}
+
+.form-bold-font {
+  font-weight: 600;
 }

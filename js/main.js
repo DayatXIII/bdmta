@@ -220,5 +220,13 @@ jQuery(document).ready(function ($) {
     $("#pastCompetitionsTable").DataTable();
   });
 
-  $("a#single_image").fancybox();
+  // enable popover
+  $(document).ready(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+
+  // dismissable popover
+  $(".popover-dismiss").popover({
+    trigger: "focus",
+  });
 });

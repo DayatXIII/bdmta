@@ -63,36 +63,46 @@
     <!--==========================
     Header
   ============================-->
-    <header id="header">
-      <div class="container">
-        <div id="logo" class="pull-left">
-          <!-- <h1><a href="#body" class="scrollto">Reve<span>al</span></a></h1> -->
-          <!-- Uncomment below if you prefer to use an image logo -->
+    <header>
+      <nav class="navbar navbar-expand-lg static-top">
+        <div class="container">
           <a href="index.html"
             ><img src="img/testlogo.png" alt="" title=""
           /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#nav-menu-container"
+            aria-controls="nav-menu-container"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          ></button>
+          <div class="navbar-collapse" id="nav-menu-container">
+            <ul class="navbar-nav nav-menu ml-auto">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li class="menu-has-children">
+                <a class="activities-nav" href="#">Activities</a>
+                <ul>
+                  <li><a href="events-list.html">Events</a></li>
+                  <li><a href="competitions-list.html">Competitions</a></li>
+                </ul>
+              </li>
+              <li><a href="gyms-list.html">Gyms</a></li>
+              <li><a href="athletes-list.html">Athletes</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal"
+                  >Sign Up / Log In</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <nav id="nav-menu-container">
-          <ul class="nav-menu">
-            <li class="menu-active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li class="menu-has-children">
-              <a class="activities-nav" href="#">Activities</a>
-              <ul>
-                <li><a href="events-list.html">Events</a></li>
-                <li><a href="competitions-list.html">Competitions</a></li>
-              </ul>
-            </li>
-            <li><a href="gyms-list.html">Gyms</a></li>
-            <li><a href="athletes-list.html">Athletes</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- #nav-menu-container -->
-      </div>
+      </nav>
     </header>
+
     <!-- #header -->
 
     <main id="main">

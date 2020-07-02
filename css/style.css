@@ -339,7 +339,7 @@ h6 {
 /* Nav Meu Styling */
 
 .nav-menu a {
-  padding: 10px 8px;
+  padding: 0px 8px;
   text-decoration: none;
   display: inline-block;
   color: #555;
@@ -1586,19 +1586,88 @@ div.shadow {
 }
 
 .btn-register {
-  background-color: #50d9af;
+  background-color: #0c2e8a;
   color: #ffffff;
-  border: 2px solid #50d9af;
+  border: 2px solid #0c2e8a;
   font-size: 18px;
   font-weight: 600;
 }
 
 .btn-register:hover {
-  background-color: #0c2e8a;
+  background-color: #50d9af;
   color: #ffffff;
-  border: 2px solid #0c2e8a;
+  border: 2px solid #50d9af;
 }
 
 .form-bold-font {
-  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+/* ////////////////////
+sign up modal styling 
+//////////////////////*/
+h1.bold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  border: 2px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button.modalsignup {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+  padding: 14px 20px;
+  margin: 0px 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
 }

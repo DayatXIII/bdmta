@@ -106,6 +106,213 @@
     <!-- #header -->
 
     <main id="main">
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered" style="opacity: 0.95;">
+          <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body">
+              <!-- start nav tabs -->
+              <div class="container">
+                <ul class="nav nav-tabs nav-justified" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link font-weight-bold active"
+                      data-toggle="tab"
+                      href="#LogIn"
+                      >Log In</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link font-weight-bold"
+                      data-toggle="tab"
+                      href="#SignUp"
+                      >Sign Up</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- end nav tabs -->
+
+              <div class="tab-content">
+                <!-- log in section -->
+                <div id="LogIn" class="container tab-pane show active fade">
+                  <form action="#">
+                    <h1 class="bold">Log In</h1>
+                    <hr />
+
+                    <div class="form-group">
+                      <label for="email" class="form-bold-font">E-Mail</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        placeholder="E-Mail"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="password" class="form-bold-font"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        name=""
+                        placeholder="Password"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for=""
+                        >Don't have an account? <a href="#">Sign Up</a></label
+                      >
+                    </div>
+
+                    <div class="form-group">
+                      <label for=""><a href="#">Forgot you password?</a></label>
+                    </div>
+
+                    <div class="d-flex align-items-stretch">
+                      <button
+                        data-dismiss="modal"
+                        type="button"
+                        class="btn btn-lg btn-danger modalsignup"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        type="submit"
+                        class="btn btn-lg btn-success modalsignup"
+                      >
+                        Log In
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <!-- end log in section -->
+
+                <div id="SignUp" class="container tab-pane fade">
+                  <form action="#">
+                    <!-- sign up section -->
+                    <h1 class="bold">Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr />
+
+                    <div class="form-group">
+                      <label for="email" class="form-bold-font">E-Mail</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        placeholder="E-Mail"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="password" class="form-bold-font"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        name=""
+                        placeholder="Password"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="repeat password" class="form-bold-font"
+                        >Repeat Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        name=""
+                        placeholder="Repeat Password"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="" class="form-bold-font">Account Type</label>
+                      <a
+                        href="#"
+                        style="color: #000000;"
+                        tabindex="0"
+                        data-toggle="popover"
+                        data-trigger="focus"
+                        data-html="true"
+                        title="<b>Types of Account</b>"
+                        data-content="
+                    <p><b>Athletes</b><br/>Lorem Ipsum Hello World</p>
+                    <p><b>Gym Instructor</b><br/>Lorem Ipsum Hello World</p>
+                    <p><b>Gym Owner</b><br/>Lorem Ipsum Hello World</p>
+                    "
+                      >
+                        <i
+                          class="fa fa-question-circle-o"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                      <select class="form-control" id="">
+                        <option value="" selected disabled
+                          >Select Account Type</option
+                        >
+                        <option value="">Athletes</option>
+                        <option value="">Gym Instructor</option>
+                        <option value="">Gym Owner</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>
+                        <input
+                          type="checkbox"
+                          checked="checked"
+                          name="remember"
+                        />
+                        Remember me
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <small id="helpId" class="form-text text-muted mb-4"
+                        >By creating an account you agree to our
+                        <a href="#">Term of Services</a></small
+                      >
+                    </div>
+
+                    <div class="d-flex align-items-stretch">
+                      <button
+                        data-dismiss="modal"
+                        type="button"
+                        class="btn btn-lg btn-danger modalsignup"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        type="submit"
+                        class="btn btn-lg btn-success modalsignup"
+                      >
+                        Sign Up
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <!-- end sign up section -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end sign up / log in modal -->
+
       <!--==========================
       Call To Action Section
     ============================-->

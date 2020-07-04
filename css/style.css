@@ -1585,18 +1585,21 @@ div.shadow {
   margin-top: 20px;
 }
 
+/*///////////////// 
+Register Button
+////////////////*/
 .btn-register {
-  background-color: #0c2e8a;
+  background-color: #50d9af;
   color: #ffffff;
-  border: 2px solid #0c2e8a;
+  border: 2px solid #50d9af;
   font-size: 18px;
   font-weight: 600;
 }
 
 .btn-register:hover {
-  background-color: #50d9af;
+  background-color: #0c2e8a;
   color: #ffffff;
-  border: 2px solid #50d9af;
+  border: 2px solid #0c2e8a;
 }
 
 .form-bold-font {
